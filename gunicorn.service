@@ -6,8 +6,8 @@ After=network.target
 [Service]
 User=root
 Group=root
-WorkingDirectory=/var/www/gmap
-ExecStart=/var/www/gmap/myprojectenv/bin/gunicorn \
+WorkingDirectory=path
+ExecStart=path/myprojectenv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
