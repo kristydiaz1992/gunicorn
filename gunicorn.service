@@ -11,7 +11,7 @@ ExecStart=/var/www/gmap/myprojectenv/bin/gunicorn \
           --access-logfile - \
           --workers 3 \
           --bind unix:/run/gunicorn.sock \
-          ${APPNAME}.wsgi:application
+          test.wsgi:application
 
 [Install]
 WantedBy=multi-user.target
